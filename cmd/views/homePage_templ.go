@@ -40,7 +40,7 @@ func Home(title string) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</label> <input type=\"text\" placeholder=\"title to your post\" name=\"title\"> <textarea id=\"w3review\" name=\"story\" rows=\"4\" cols=\"50\"></textarea> <button>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</label> <input type=\"text\" placeholder=\"title to your post\" name=\"title\"> <textarea name=\"story\" rows=\"4\" cols=\"50\"></textarea> <button>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

@@ -18,6 +18,7 @@ func NewAPIserver(port string) *APIserver {
 func (s *APIserver) Run() error {
 	var e = echo.New()
 	e.Use(h.Gurd)
+	e.GET("", handleShowAll)
 	e.GET("/create", handleCreate)
 	e.POST("/create", handleCreateAndLogin)
 	e.GET("/login", handlelogin)

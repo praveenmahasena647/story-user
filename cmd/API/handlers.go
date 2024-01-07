@@ -91,3 +91,9 @@ func handlepost(ctx echo.Context) error {
 	}
 	return ctx.String(http.StatusOK, "New story has been added")
 }
+
+func handleShowAll(ctx echo.Context) error {
+	var collection, err = postgres.FetchAll()
+	fmt.Println(collection, err)
+	return nil
+}
