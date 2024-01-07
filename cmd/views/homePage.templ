@@ -1,0 +1,21 @@
+package views
+
+templ Home(title string){
+    <!DOCTYPE html>
+    <html>
+        @Head(title)
+        <body>
+            <div>
+                <form hx-post='/newpost' hx-swap='none'>
+                    <div>
+                        <label>Title</label>
+                        <input type='text' placeholder='title to your post' name='title' />
+                        <textarea name="story" rows="4" cols="50" ></textarea>
+                        <button>post</button>
+                    </div>
+                </form>
+            </div>
+            yayyayaaa
+        </body>
+    </html>
+}

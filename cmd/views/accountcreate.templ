@@ -1,0 +1,40 @@
+package views
+
+templ CreateAccount(title string){
+    <!DOCTYPE html>
+    <html lang='eng'>
+        @Head(title)
+        <body>
+            <div>
+                <form hx-post='/create' hx-push-url='true' hx-replace-url='true'>
+
+                    <div>
+                        <label>
+                            EmailID
+                        </label>
+                        <input type='text' placeholder='User EmailID' name='email' />
+                    </div>
+
+                    <div>
+                        <label>
+                            UserName
+                        </label>
+                        <input type='text' placeholder='User EmailID' name='username' />
+                    </div>
+
+                    <div>
+                        <label>
+                            password
+                        </label>
+                        <input type='text' placeholder='User EmailID' name='password' />
+                    </div>
+
+                    <button>
+                        CreateAccount
+                    </button>
+
+                </form>
+            </div>
+        </body>
+    </html>
+}

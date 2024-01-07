@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS posts(
+    id SERIAL NOT NULL,
+    title VARCHAR(50) NOT NULL,
+    post TEXT NOT NULL,
+    user_id INTEGER REFERENCES users(id)
+)

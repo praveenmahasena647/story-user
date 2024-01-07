@@ -1,0 +1,26 @@
+package views
+
+
+templ Login(title string){
+    <!DOCTYPE html>
+    <html>
+        @Head(title)
+        <body>
+            <div>
+                <form hx-post='/login' hx-push-url='true' hx-history-push='true'>
+                    <div>
+                        <label>EmailID</label>
+                        <input type='text' placeholder='Enter Your EmailID' name='email' />
+                    </div>
+                    <div>
+                        <label>EmailID</label>
+                        <input type='text' placeholder='Enter Your EmailID' name='password' />
+                    </div>
+                    <div>
+                        <button>Login</button>
+                    </div>
+                </form>
+            </div>
+        </body>
+    </html>
+}

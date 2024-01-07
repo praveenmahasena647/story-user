@@ -1,0 +1,8 @@
+user: postgres
+password: CJ
+dbname: story
+host: localhost
+port: 5432
+sslmode: disable
+updir: ./schemas/db-up/
+downdir: ./schemas/db-down/
