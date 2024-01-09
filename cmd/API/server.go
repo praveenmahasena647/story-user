@@ -26,5 +26,5 @@ func (s *APIserver) Run() error {
 	e.GET("/home", handleHome)
 	e.POST("/home", handleHome)
 	e.POST("/newpost", handlepost)
-	return e.Start(":8081") // should change later
+	return e.Start(s.listenAddr) // should change later
 }
